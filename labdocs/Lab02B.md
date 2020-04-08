@@ -71,7 +71,7 @@ While the inference compute is being provisioned, you can prepare the inference 
 
     ![Visual Inference Pipeline](images/visual-inference.jpg)
 
-8. Submit the pipeline as a new experiment named **predict-diabetes** on the **aml-compute** compute target you used for training. This may take a while!
+8. Submit the pipeline as a new experiment named **predict-diabetes** on the **aml-cluster** compute target you used for training. This may take a while!
 
 ## Task 3: Publish a Web Service
 
