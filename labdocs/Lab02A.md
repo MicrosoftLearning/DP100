@@ -8,7 +8,7 @@ The *Designer* interface provides a drag & drop environment in which you can def
 
 Before you start this lab, ensure that you have completed [Lab 1A](Lab01A.md) and [Lab 1B](Lab01B.md), which include tasks to create the Azure Machine Learning workspace and other resources used in this lab. Then follow these steps to initialize the compute you'll need for this lab:
 
-1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page, on the **Training clusters** tab, click the name of the **aml-cluster** training cluster you created previously.
+1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page, on the **Compute clusters** tab, click the name of the **aml-cluster** training cluster you created previously.
 2. Edit your training cluster to change the **Minimum number of nodes** to 2 (so both the minimum and maximum number of nodes is 2), and click **Update**. This will ensure that your cluster nodes are always running, and minimize the time you will need to wait for them to start.
 
     > **Important**: If you decide not to complete this lab, reset the minimum number of nodes to 0 to avoid incurring unnecessary cost.
@@ -68,7 +68,7 @@ With the data flow steps defined, you're now ready to run the training pipeline 
 
     **Tip**: While it's running, you can view the pipeline and experiment that have been created in the **Pipelines** and **Experiments** pages. Switch back to the **Visual Diabetes Training** pipeline on the **Designer** page when you're done.
 
-3. After the **Normalize Data** module has finished (indicated by a &#x2705; icon), select it, and in the **Settings** pane, on the **Outputs + Logs** tab, under **Port outputs** in the **Transformed dataset** section, click the **Visualize** icon, and note that you can view statistics and distribution visualizations for the transformed columns.
+3. After the **Normalize Data** module has finished (indicated by a &#x2705; icon), select it, and in the **Settings** pane, on the **Outputs + Logs** tab, under **Data outputs** in the **Transformed dataset** section, click the **Visualize** icon, and note that you can view statistics and distribution visualizations for the transformed columns.
 4. Close the **Normalize Data** visualizations, close or resize the settings pane (click the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon), and wait for the rest of the modules to complete. Then visualize the output of the **Evaluate Model** module to see the performance metrics for the model.
 
     **Note**: The performance of this model isn't all that great, partly because we performed only minimal feature engineering and pre-processing. You could try some different classification algorithms and compare the results (you can connect the outputs of the **Split Data** module to multiple **Train Model** and **Score Model** modules, and you can connect a second scored model to the **Evaluate Model** module to see a side-by-side comparison). The point of the exercise is simply to introduce you to the Designer interface, not to train a perfect model!

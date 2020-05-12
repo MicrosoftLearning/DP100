@@ -14,7 +14,7 @@ In this lab, you will publish an inference pipeline as a containerized service i
 
 1. In [Azure Machine Learning studio](https://ml.azure.com), on the **Compute** page for your workspace, review the existing compute targets under each tab. These should include:
     * **Compute Instances**: The compute instance you created in a previous lab.
-    * **Training Clusters**: The **aml-cluster** compute target you created in a previous lab.
+    * **Compute Clusters**: The **aml-cluster** compute target you created in a previous lab.
     * **Inference Clusters**: None (yet!)
     * **Attached Compute**: None (this is where you could attach a virtual machine or Databricks cluster that exists outside of your workspace)
 
@@ -30,7 +30,7 @@ In this lab, you will publish an inference pipeline as a containerized service i
     * **Network configuration**: Basic
     * **Enable SSL configuration**: Unselected
 
-    > **Note**: Your Azure subscription may have restrictions on the number of cores you can provision, with additional regional restrictions. In this lab, it's important to create your AKS cluster in a different regiosn from your other compute, and to use the **Dev-test** cluster purpose (to allow your endpoint to be deployed on a cluster with fewer than the 12 core minimum for production clusters) and the **Standard_DS2_v2** virtual machine size (which includes two cores per node, so that your two nodes use only four cores).
+    > **Note**: Your Azure subscription may have restrictions on the number of cores you can provision, with additional regional restrictions. In this lab, it's important to create your AKS cluster in a different region from your other compute, and to use the **Dev-test** cluster purpose (to allow your endpoint to be deployed on a cluster with fewer than the 12 core minimum for production clusters) and the **Standard_DS2_v2** virtual machine size (which includes two cores per node, so that your two nodes use only four cores).
 
 4. Verify that the compute target is in the *Creating* state, and proceed to the next task. Returning periodically to refresh this page and verify that the cluster is being created.
 
