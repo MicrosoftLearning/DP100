@@ -43,7 +43,7 @@ Compute instances in Azure Machine Learning provide an easy to manage Python env
 
 1. In a new browser tab, navigate to [https://online.visualstudio.com](https://online.visualstudio.com), and click **Get Started**.
 2. Sign into Visual Studio Online using the same Microsoft credentials you used to sign into Azure.
-3. Click **Create environment**. If you don't already have a Visual Studio Online plan, create one. This is used to track resource utlization by your Visual Studio Online environments. Then create an environment with the following settings:
+3. Click **Create Codespace**. If you don't already have a Visual Studio Online plan, create one. This is used to track resource utlization by your Visual Studio Online environments. Then create an environment with the following settings:
     - **Environment Name**: *A unique name of your choice*
     - **Git Repository**: MicrosoftLearning/DP100
     - **Instance Type**: Standard (Linux)
